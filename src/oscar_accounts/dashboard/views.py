@@ -11,7 +11,7 @@ from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
 from django.views import generic
 from oscar.core.loading import get_model
-from oscar.templatetags.currency_filters import currency
+from oscar_accounts.templatetags.accounts_currency_filters import currency
 
 from oscar_accounts import exceptions, facade, names
 from oscar_accounts.dashboard import forms, reports

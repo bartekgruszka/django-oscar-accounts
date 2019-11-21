@@ -6,7 +6,7 @@ from django.core import exceptions
 from django.utils.translation import ugettext_lazy as _
 from oscar.core.loading import get_model
 from oscar.forms.widgets import DatePickerInput
-from oscar.templatetags.currency_filters import currency
+from oscar_accounts.templatetags.accounts_currency_filters import currency
 
 from oscar_accounts import codes, names
 

@@ -134,6 +134,11 @@ append it to your `OSCAR_DASHBOARD_NAVIGATION`
         })
 
 
+In order to change currency, set OSCAR_ACCOUNTS_DEFAULT_CURRENCY, by default it is equal to OSCAR_DEFAULT_CURRENCY
+
+OSCAR_ACCOUNTS_DEFAULT_CURRENCY='USD'
+
+
 Furthermore you need to add the url-pattern to your `urls.py`
 
 .. code-block:: python
