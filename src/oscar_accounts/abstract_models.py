@@ -219,6 +219,8 @@ class Account(models.Model):
         """
         if user is None:
             return True
+        if user.is_superuser: # admin can authorise every transaction
+            return True
         if self.primary_user:
             return user == self.primary_user
         secondary_users = self.secondary_users.all()
